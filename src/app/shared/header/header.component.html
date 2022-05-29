@@ -1,0 +1,58 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="logo-image" style="width: 65px; height: 30px;">
+        <img src="assets/images/logo.jpg" class="img-fluid">
+    </div>
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0">  <!-- ngIf="isAuthUser()" -->
+  
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white bg-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Autenticación
+                            </a>
+                            <ul class="dropdown-menu text-withe bg-dark" aria-labelledby="navbarDropdown">
+                                <li routerLinkActive="active">
+                                    <a class="nav-link px-2">Usuarios</a>  <!-- [routerLink]="['user']" -->
+                                </li>
+                                <li routerLinkActive="active">
+                                    <a class="nav-link px-2">Roles</a>  <!-- [routerLink]="['role']" -->
+                                </li>
+                            </ul>
+                        </li>
+  
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white bg-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Catálogos
+                        </a>
+                        <ul class="dropdown-menu text-withe bg-dark" aria-labelledby="navbarDropdown">
+  
+                                <li class="nav-item" routerLinkActive="active">
+                                    <a class="nav-link">Complejos</a>  <!-- [routerLink]="['resort']" -->
+                                </li>
+  
+  
+                                <li class="nav-item" routerLinkActive="active">
+                                    <a class="nav-link px-2">Unidades</a>  <!-- [routerLink]="['unit']" -->
+                                </li>
+  
+                        </ul>
+                    </li>
+  
+            </ul>
+            <ul class="nav col-12 col-sm-auto me-sm-auto mb-2 justify-content-center mb-sx-0">
+                
+            </ul>
+        
+            <div class="text-end"> <!-- ngIf="isAuthUser()" -->
+                <button class="btn btn-outline-light me-2" (click)="closeApp()">Salir</button>
+            </div>
+        
+            <div class="text-end"> <!-- ngIf="isAuthUser()" -->
+                <a routerLink="/login" class="btn btn-outline-light me-2">Entrar</a>
+            </div>
+        </div>
+    </div>
+  </nav>

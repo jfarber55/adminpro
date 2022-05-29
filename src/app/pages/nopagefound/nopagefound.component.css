@@ -1,0 +1,13 @@
+.error-page .footer {
+    position: fixed;
+    bottom: 0px;
+    z-index: 10; }
+  .error-box {
+    position: relative;
+    padding-bottom: 60px; }
+  .error-body {
+    padding-top: 10%; }
+    .error-body h1 {
+      font-size: 100px;
+      font-weight: 600;
+      line-height: 100px; }
